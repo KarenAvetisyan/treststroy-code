@@ -1,0 +1,235 @@
+.modal {
+position: fixed;
+z-index: 9999;
+left: 0;
+bottom: 0;
+top: 0;
+right: 0;
+overflow-x: hidden;
+overflow-y: auto;
+padding: 0 10px;
+visibility: hidden;
+opacity: 0;
+transition: all 0.3s ease-in-out;
+display: flex;
+align-items: center;
+
+}
+.modal input,
+.modal textarea{
+    font-family: 'Montserrat';
+}
+
+.modal > * {
+font-family: "futura-pt-light";
+}
+
+.modal .m-close{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    transform: rotate(45deg);
+    
+}
+.modal .m-close:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    transform: rotate(-90deg);
+}
+.modal .m-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.modal .modal-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.63);
+z-index: -1;
+}
+
+.modal .form__box {
+width: 100%;
+display: inline-block;
+padding-left: 56px;
+padding-right: 56px;
+padding-top: 58px;
+padding-bottom: 50px;
+border-radius: 5px;
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+background: rgb(255, 255, 255);
+}
+
+.modal .form__box h4 {
+font-size: 40px;
+text-align: center;
+margin-bottom: 40px;
+}
+
+.modal .form__box textarea{
+    width: 100%;
+    resize: none;
+    height: 100px;
+    padding: 10px 20px;
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.219);
+background: rgb(255, 255, 255);
+border: none;
+outline: none;
+font-size: 16px;
+border-bottom: 2px solid #D65327;
+}
+
+.modal .form__box .field {
+width: 100%;
+flex-shrink: 0;
+margin-bottom: 18px;
+position: relative;
+}
+
+.modal .form__box .country__code{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal .form__box .field input {
+padding-left: 16px;
+padding-right: 16px;
+height: 55px;
+width: 100%;
+outline: none;
+font-size: 17px;
+border: none;
+font-weight: 400;
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.26);
+background: rgb(255, 255, 255);
+border-bottom: 2px solid #D65327;
+}
+.modal .form__box .field input.active{
+    padding-left: 40px;
+}
+.modal .form__box .field input.active+.country__code{
+    opacity: 1;
+}
+.modal .form__box .field input.active::placeholder{
+    opacity: 0;
+}
+
+.modal .form__box .field input::-moz-placeholder {
+color: #858585;
+}
+
+.modal .form__box .field input::-moz-placeholder, .modal .form__box .field input::placeholder {
+color: #858585;
+}
+
+.modal .form__box .checkbox__label {
+font-size: 14px;
+font-weight: 300;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+margin-bottom: 0;
+display: flex;
+align-items: baseline;
+margin-top: 39px;
+font-family: 'Montserrat';
+
+}
+
+.modal .form__box .checkbox__label p {
+margin-bottom: 0;
+}
+
+.modal .form__box .checkbox__label input {
+margin-right: 9px;
+position: relative;
+top: 2px;
+transform: scale(1.4);
+}
+
+.modal .form__box .checkbox__label a {
+text-decoration: underline;
+text-underline-position: under;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+color: #D65327;
+}
+
+.modal .form__box .checkbox__label a:hover {
+text-decoration: none;
+}
+
+.modal .form__box .submit {
+    background-color: #D65327;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    font-family: 'Montserrat';
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    transition: ease-in-out 0.3s;
+}
+.modal .form__box .submit:hover{
+    background-color: #aa411e;
+}
+
+.modal.active {
+visibility: visible;
+opacity: 1;
+
+}
+
+.modal.active .m-container {
+opacity: 1;
+}
+
+@media (max-width: 576px) {
+    .modal .form__box{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 80px;
+        padding-bottom: 36px;
+    }
+}

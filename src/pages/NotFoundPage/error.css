@@ -1,0 +1,30 @@
+.page__error {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.page__error .error__box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.page__error .error__box h1{
+    width: 100%;
+    text-align: center;
+}
+.page__error .error__box p{
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.page__error .error__box a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 50px;
+}

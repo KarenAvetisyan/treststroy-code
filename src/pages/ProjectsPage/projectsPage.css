@@ -1,0 +1,122 @@
+.page__projects .project__box-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.page__projects .projects__list {
+  width: 35.3%;
+  margin-top: 40px;
+}
+.page__projects .list__title {
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 14px;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #78B6E3;
+  position: relative;
+}
+.page__projects .list__title:before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #78B6E3;
+  display: inline-block;
+}
+.page__projects .map__img {
+  width: 64.7%;
+  padding-left: 10px;
+  padding-right: 60px;
+  margin-top: -40px;
+}
+.page__projects .map__img img {
+  width: 100%;
+}
+.page__projects .project__enterprises {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 110px;
+  margin-bottom: 25px;
+}
+.page__projects .project__enterprises-title {
+  width: 50%;
+}
+.page__projects .project__enterprises-title h4 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 23px;
+}
+.page__projects .project__enterprises-title p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+}
+.page__projects .project__enterprises-btn {
+  width: 50%;
+}
+.page__projects .project__enterprises-btn .primary--btn {
+  display: block;
+  margin-left: auto;
+}
+.page__projects .project__enterprises-icons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.page__projects .project__enterprises-icons:first-of-type {
+  margin-top: 30px;
+}
+.page__projects .project__enterprises-icons .pr__icon {
+  display: inline-block;
+  margin: 10px 25px;
+  max-width: 104px;
+}
+.page__projects .project__enterprises-icons .pr__icon img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .page__projects .projects__list {
+    width: 100%;
+  }
+  .page__projects .map__img {
+    width: 100%;
+    padding: 0;
+    margin-top: 0px;
+  }
+  .page__projects .project__enterprises {
+    margin-top: 56px;
+    margin-bottom: 0;
+  }
+  .page__projects .project__enterprises-title {
+    width: 100%;
+  }
+  .page__projects .project__enterprises-btn {
+    width: 100%;
+  }
+  .page__projects .project__enterprises-btn .primary--btn {
+    margin-left: 0;
+  }
+  .page__projects .project__enterprises-icons {
+    margin-top: 30px;
+  }
+  .page__projects .project__enterprises-icons:last-of-type .pr__icon:last-of-type {
+    width: 100%;
+  }
+  .page__projects .project__enterprises-icons .pr__icon {
+    width: calc(50% - 10px);
+    margin: 5px 5px;
+    text-align: center;
+  }
+}

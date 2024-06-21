@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background-color: #16344D;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.custom-section {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: calc(100vh - 144px);
+  position: relative; 
+}
+@media (max-width: 991px) {
+  .custom-section{
+      min-height: calc(100vh - 126px);
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1{
+  font-size: 48px;
+  line-height: 110%;
+  font-weight: 900;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  h1{
+    font-size: 31px;
+  }
+}
+@media (max-width: 767px) {
+  h1{
+    font-size: 28px;
+  }
+}
+@media (max-width: 450px) {
+  h1{
+    font-size: 21px;
+  }
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+ul {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container{
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container{
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container{
+      max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1170px;
+  }
+}
+
+.d-max-lg-only, .d-min-lg-only{
+  display: none!important;
+}
+@media (max-width: 991px) {
+  .d-max-lg-only{
+    display: block!important;
+  }
+}
+/* wrapper  */
+@media (max-width: 767px) {
+  #wrapper{
+    padding-top: 126px;
+  }
+}

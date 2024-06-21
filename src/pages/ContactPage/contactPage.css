@@ -1,0 +1,106 @@
+.page__contacts {
+  padding-bottom: 150px;
+  min-height: auto;
+}
+.page__contacts .title {
+  margin-bottom: 20px;
+}
+.page__contacts .contact__box-wrap {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-left: 94px;
+}
+.page__contacts .single__contact {
+  margin: 15px 0;
+  display: inline-block;
+  width: 100%;
+}
+.page__contacts .contact__text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  max-width: 390px;
+  padding-right: 40px;
+  width: 100%;
+  padding-top: 10px;
+}
+.page__contacts .contact__text .oval__icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #D65327;
+  transition: 0.3s;
+  margin-right: 17px;
+}
+.page__contacts .contact__text .oval__icon img {
+  max-width: 100%;
+  padding: 4px;
+}
+.page__contacts .contact__text .c__head {
+  margin-bottom: 14px;
+}
+.page__contacts .contact__text p {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+.page__contacts .contact__text span {
+  font-weight: 500;
+}
+.page__contacts .contact__text a {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.page__contacts .contact__text a:hover {
+  color: #D65327;
+}
+.page__contacts .contact__map {
+  display: inline-block;
+  width: 481px;
+  height: 419px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.page__contacts .contact__map div{
+  width: 100%!important;
+  height: calc(100% + 35px)!important;
+}
+.page__contacts .contact__map .ymaps-2-1-79-ground-pane{
+  filter: grayscale(1);
+}
+.page__contacts .primary--btn {
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .page__contacts .contact__box-wrap {
+    padding-left: 0;
+  }
+}
+@media (max-width: 991px) {
+  .page__contacts {
+    padding-bottom: 50px;
+  }
+  .page__contacts .contact__map {
+    order: 1;
+    width: 100%;
+  }
+  .page__contacts .contact__text {
+    order: 2;
+  }
+}
+@media (max-width: 576px) {
+  .page__contacts .contact__map {
+    height: 289px;
+  }
+}
